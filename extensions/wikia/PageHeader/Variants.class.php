@@ -15,6 +15,8 @@ class Variants {
 
 	public function __construct( WikiaApp $app ) {
 		$this->skinTemplate = $app->getSkinTemplateObj();
+		$this->currentVariantName = \Language::getLanguageName( $this->title->getPageLanguage()->getCode() );
+		$this->variantList = $this->handleVariants( $app );
 	}
 
 	/**
