@@ -55,6 +55,22 @@
 		}
 	}
 
+	&__variants {
+		padding-bottom: 12px;
+
+		.wds-dropdown__toggle-chevron {
+			margin-left: 4px;
+			transform: scale(.75);
+			vertical-align: text-top;
+		}
+
+		&:hover {
+			.wds-dropdown__toggle-chevron {
+				transform: rotate(180deg) scale(.75);
+			}
+		}
+	}
+	
 	&__languages {
 		padding-bottom: 12px;
 
@@ -69,6 +85,10 @@
 				transform: rotate(180deg) scale(.75);
 			}
 		}
+	}
+
+	&__variants + &__languages {
+    		margin-left: 5px;
 	}
 
 	&__main {
