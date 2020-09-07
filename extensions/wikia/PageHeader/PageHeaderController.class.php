@@ -28,7 +28,7 @@ class PageHeaderController extends \WikiaController {
 	}
 
 	public function variants() {
-		$this->setVal( 'variants', $this->getVal( 'variants' ) );
+		$this->setVal( 'variants', new Variants( $this->app ) );
 	}
 
 	public function languages() {
