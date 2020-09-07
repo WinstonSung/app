@@ -11,6 +11,7 @@ $wgAutoloadClasses[ 'Wikia\PageHeader\Buttons' ] = $dir . 'Buttons.class.php';
 $wgAutoloadClasses[ 'Wikia\PageHeader\Categories' ] = $dir . 'Categories.class.php';
 $wgAutoloadClasses[ 'Wikia\PageHeader\Counter' ] = $dir . 'Counter.class.php';
 $wgAutoloadClasses[ 'Wikia\PageHeader\Languages' ] = $dir . 'Languages.class.php';
+$wgAutoloadClasses[ 'Wikia\PageHeader\Variants' ] = $dir . 'Variants.class.php';
 $wgAutoloadClasses[ 'Wikia\PageHeader\PageTitle' ] = $dir . 'PageTitle.class.php';
 $wgAutoloadClasses[ 'Wikia\PageHeader\Subtitle' ] = $dir . 'Subtitle.class.php';
 
