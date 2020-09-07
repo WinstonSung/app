@@ -32,6 +32,7 @@ class Variants {
 				$variants[$variant] = [
 					'href' => $variant['href'],
 					'id' => $variant['id'],
+					'code' => $variant,
 				];
 			return $variants;
 		}
