@@ -1,3 +1,8 @@
+namespace Wikia\PageHeader;
+
+use \WikiaApp;
+
+class Languages {
 
 	/**
 	 * @return array
@@ -16,3 +21,4 @@
 
 		return [];
 	}
+}
