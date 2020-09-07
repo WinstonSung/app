@@ -2,7 +2,8 @@
 
 namespace Wikia\PageHeader;
 
-use \WikiaApp;
+use Html;
+use WikiaApp;
 
 class Variants {
 
@@ -11,6 +12,10 @@ class Variants {
 	 * @var \SkinTemplate
 	 */
 	private $skinTemplate;
+
+	public function __construct( WikiaApp $app ) {
+		$this->skinTemplate = $app->getSkinTemplateObj();
+	}
 
 	/**
 	 * @return array
