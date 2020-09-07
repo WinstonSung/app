@@ -1,3 +1,5 @@
+<?php
+
 namespace Wikia\PageHeader;
 
 use \WikiaApp;
