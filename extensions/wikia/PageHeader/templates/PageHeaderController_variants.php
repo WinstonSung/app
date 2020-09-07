@@ -11,8 +11,8 @@
 			<?php foreach ( $variants as $variant ) : ?>
 				<li>
 					<a href="<?= Sanitizer::encodeAttribute( $variant['href'] ); ?>"
-					   id="ca-varlang-<?= $id ?>"
-					   rel="nofollow"><?= htmlspecialchars( $variant['id'] ); ?></a>
+					   id="ca-varlang-<?= $variant['id'] ?>"
+					   rel="nofollow"><?= htmlspecialchars( $variant['code'] ); ?></a>
 				</li>
 			<?php endforeach ?>
 		</ul>
