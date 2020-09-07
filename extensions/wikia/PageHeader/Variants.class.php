@@ -7,7 +7,6 @@ use WikiaApp;
 
 class Variants {
 
-
 	/**
 	 * @var \SkinTemplate
 	 */
@@ -35,6 +34,7 @@ class Variants {
 			return $variants;
 		}
 
+			
 		return [];
 	}
 }
