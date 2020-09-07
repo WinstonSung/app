@@ -20,18 +20,19 @@ class Variants {
 	}
 
 	/**
+	 * @param WikiaApp $app
+	 *
 	 * @return array
 	 */
-	private function languageVariants() {
+	private function handleVariants( WikiaApp $app ): array {
 		$variants = $this->skinTemplate->get( 'content_navigation' )['variants'];
 		if ( !empty( $variants ) ) {
-			return array_map( function ( $variant ) {
-				return Html::element( 'a', [
+			foreach ( $variants as $variant ) {
+				$variants[$variant] = [
 					'href' => $variant['href'],
-					'rel' => 'nofollow',
 					'id' => $variant['id'],
-				], $variant['text'] );
-			}, $variants );
+				];
+			return $variants;
 		}
 
 		return [];
