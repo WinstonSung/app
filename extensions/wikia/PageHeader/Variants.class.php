@@ -6,6 +6,12 @@ use \WikiaApp;
 
 class Variants {
 
+
+	/**
+	 * @var \SkinTemplate
+	 */
+	private $skinTemplate;
+
 	/**
 	 * @return array
 	 */
