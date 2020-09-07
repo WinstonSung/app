@@ -4,7 +4,7 @@ namespace Wikia\PageHeader;
 
 use \WikiaApp;
 
-class Languages {
+class Variants {
 
 	/**
 	 * @return array
